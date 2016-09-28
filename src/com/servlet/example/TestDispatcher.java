@@ -20,10 +20,6 @@ public class TestDispatcher extends HttpServlet {
 			getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
 			return;
 		}
-		
-		String firstname = request.getParameter("firstname");
-		String lastname = request.getParameter("lastname");
-		response.getWriter().println("Hello " + firstname + " " + lastname + "!");
 
 	}
 
